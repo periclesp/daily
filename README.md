@@ -1,1 +1,1 @@
-# daily
+# daily tasks vanilla js app
