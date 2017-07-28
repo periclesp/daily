@@ -3,26 +3,26 @@
   <head>
     <meta charset="utf-8">
     <title>Daily - Vanilla JS todo app</title>
-    <link rel="stylesheet" href="node_modules/todomvc-app-css/index.css">
+    <link rel="stylesheet" href="assets/style.css">
   </head>
   <body>
     <section class="todoapp">
       <header class="header">
-        <h1>todos</h1>
-        <input class="new-todo" placeholder="What needs to be done?" autofocus>
+        <h1 class="serif">Today</h1>
+        <input class="new-todo" placeholder="new task" autofocus>
       </header>
       <section style="display:none" class="main">
-        <input class="toggle-all" type="checkbox">
-        <label for="toggle-all">Mark all as complete</label>
+        <input class="toggle-all" type="checkbox" style="display:none;">
+        <label for="toggle-all" style="display:none;">Mark all as complete</label>
         <ul class="todo-list"></ul>
-        <footer class="footer">
+        <footer class="footer serif">
           <span class="todo-count"></span>
-          <div class="filters">
+          <div class="filters sans">
             <a href="#/" class="selected">All</a>
             <a href="#/active">Active</a>
             <a href="#/completed">Completed</a>
           </div>
-          <button class="clear-completed">Clear completed</button>
+          <button class="sans clear-completed" style="display:none;">Clear completed</button>
         </footer>
       </section>
     </section>
@@ -30,7 +30,7 @@
       <p>Double-click to edit a todo</p>
     </footer>
     <script src="dist/bundle.js"></script>
-    <script src="node_modules/todomvc-common/base.js"></script>
-    <link rel="stylesheet" href="node_modules/todomvc-common/base.css">
+    <script src="assets/base.js"></script>
+    <link rel="stylesheet" href="assets/base.css">
   </body>
 </html>
